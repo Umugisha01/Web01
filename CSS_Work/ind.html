@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+
+    <style>
+        .header {
+            background-color: brown;
+            height: 120px;
+            text-align: center;
+            color: blanchedalmond;
+            font-size: xx-large;
+            margin: 0;
+            padding: 10px;
+        }
+        .topnavbar {
+            background-color: black;
+            overflow: hidden;
+        }
+        .topnavbar a {
+            color: blanchedalmond;
+            float: left;
+            padding: 12px;
+            text-decoration: none;
+        }
+
+        .topnavbar a:hover {
+            background-color: bisque;
+            color: black;
+        }
+
+        .column {
+            width: 30.20%;
+            float: left;
+            padding: 15px;
+            
+        }
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .footer {
+            background-color: black;
+            color: bisque;
+            height: 35px;
+            padding: 7px;
+            text-align: center;
+        }
+        .column.middle {
+            width: 50%;
+        }
+        .column.side {
+            width: 23%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+       <h1>Christian Collections</h1>
+    </div>
+    <div class="topnavbar">
+        <a href="#">Home</a>
+        <a href="#">Collection</a>
+        <a href="#">Gallery</a>
+        <a style="float: right;" href="#">About Us</a>
+    </div>
+
+    <div class="row">
+        <div class="column side">
+            <h1>Clothers</h1>
+            <p>Right click on the Normal style in the Styles gallery and then click on Modify and change the paragraph formatting of the style so that it meets ...
+                Default Paragraph Settings - Microsoft Community
+                5 Oct 2022
+                Microsoft word paragraph spacing defaults
+                12 Dec 2022
+                How can I set some default paragraph formatting, indentations
+                29 Dec 2023
+                default paragraph font vs. underlying properties
+                7 Apr 2016
+                More results from answers.microsoft.com</p>
+        </div>
+        <div class="column middle">
+            <h1>Shoes</h1>
+            <p>Right click on the Normal style in the Styles gallery and then click on Modify and change the paragraph formatting of the style so that it meets ...
+                Default Paragraph Settings - Microsoft Community
+                5 Oct 2022
+                Microsoft word paragraph spacing defaults
+                12 Dec 2022
+                How can I set some default paragraph formatting, indentations
+                29 Dec 2023
+                default paragraph font vs. underlying properties
+                7 Apr 2016
+                More results from answers.microsoft.com</p>
+        </div>
+        <div class="column side">
+            <h1>Watches</h1>
+            <p>Right click on the Normal style in the Styles gallery and then click on Modify and change the paragraph formatting of the style so that it meets ...
+                Default Paragraph Settings - Microsoft Community
+                5 Oct 2022
+                Microsoft word paragraph spacing defaults
+                12 Dec 2022
+                How can I set some default paragraph formatting, indentations
+                29 Dec 2023
+                default paragraph font vs. underlying properties
+                7 Apr 2016
+                More results from answers.microsoft.com</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Christian Copyrigtht 2024</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 22px;
+}
+.box1 {
+    background-color: aquamarine;
+    padding: 5px;
+    border: 10px solid orange;
+    margin: 70px;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+}
+.box2 {
+    background-color: brown;
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+}

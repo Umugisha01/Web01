@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       /* ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(103, 118, 17);
+        }
+        li a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            padding: 14px;
+            font-size: x-large;
+        }
+        li {
+            float:left;
+        }
+
+        li a:hover {
+            background-color: rgb(87, 118, 93);
+            color: aliceblue;
+        }
+
+        div.gallery {
+           width: 200px;
+           margin: 5px;
+           float: left;
+        }
+        div.gallery img{
+           width: 100%;
+        }
+
+        div.description {
+            width: 200px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        div.gallery a:hover {
+            border: 1px solid black;
+        }*/
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+    </style>
+
+</head>
+<body>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+            <div class="dropdown-content">
+              <a href="#">Clothers</a>
+              <a href="#">Shoes</a>
+            </div>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+    </ul>
+
+    <div class="gallery">
+        <a href="#"><img src="pixlr-image-generator-6aa7c4e4-84a9-4f0b-a1f6-58d57670becd.png"></a>
+        <div class="description">Peice: 500 RWf <br> Size: x-large</div>
+    </div>
+    
+</body>
+</html>
