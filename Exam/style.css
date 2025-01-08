@@ -1,0 +1,212 @@
+:root {
+    --primary-color: #100a54ce;    
+    --secondary-color: #840690e9;   
+    --accent-color: #c084fc;     
+    --text-color: #333333;
+    --light-bg: #f3f4f6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.4;
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header Styles */
+header {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    align-content: center;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    margin: 0 60px;
+    padding: 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.About {
+    display: flex;
+    justify-self: end;
+    margin-left: 900px;
+}
+
+
+/*Drop Down*/
+.dropdown {
+    color: var(--secondary-color);
+    transform: translateY(-0.1px);
+  }  
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    font-weight:500;
+    border: none;
+    outline: none;
+    color: rgb(23, 20, 20);
+    padding: 14px 14px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    color: var(--primary-color);
+  }
+
+  .dropdown:hover .dropbtn {
+    color: var(--secondary-color);
+    transform: translateY(-2px);
+  }  
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-radius: 5px;
+  }
+
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-links a:hover {
+    color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 8rem 2rem 4rem;
+    text-align: center;
+    color: white;
+    min-height: 35rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Popups */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.popup.hidden {
+    display: none;
+}
+.popup-content {
+    background: rgb(126, 114, 114);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+}
+.popup-content h2 {
+    margin-bottom: 1rem;
+}
+.popup-content form input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.popup-content button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: var(--primary-color, #007BFF);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.popup-content .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding-top: 0;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+  section {
+    margin-top: 40px; /* Ensure proper spacing between sections */
+  }
+  
+  .container {
+    overflow: visible; /* Prevent clipping */
+  }
+  
+

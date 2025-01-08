@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KuzaConnect - Modern Learning Platform</title>
+    <!-- Import Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="mid.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                KuzaConnect
+            </a>
+            <div class="nav-links">
+                <a href="#home"><i class="fas fa-home"></i> Home</a>
+                <a href="#features"><i class="fas fa-star"></i> Features</a>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                    <i class="fas fa-book"></i> Courses
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#fe-courses">Front-end Development</a>
+                      <a href="#be-courses">Back-end Development</a>
+                      <a href="#ma-courses">Mobile App Development</a>
+                      <a href="#gd-courses">Graphic Design</a>
+                      <a href="#dm-courses">Digital Marketing</a>
+                    </div>
+                  </div> 
+                <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+<!--                <a href="#dashboard"  class="cta-button" id="user-icon user"><p id="user"><i class="fa-solid fa-user-tie"></i></p></a>-->
+ <a href="#dashboard" class="cta-button" id="user-icon user" style="display: none;">
+    <i class="fa-solid fa-user-tie"></i> Dashboard
+</a>  
+
+<!-- Dashboard -->
+<div id="dashboard" class="popup hidden">
+    <div class="popup-content">
+        <h2>Welcome to Your Dashboard</h2>
+        <p>Hello, User! Here’s an overview of your account.</p>
+        <ul>
+            <li><a href="#">My Profile</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Log Out</a></li>
+        </ul>
+        <button class="close-btn">&times;</button>
+    </div>
+</div>
+
+            </div>
+            <div class="mobile-menu">☰</div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Transform Your Future with Online Learning</h1>
+        <p>Access world-class education from anywhere in the world.<br> Learn at your own pace with expert-led courses.</p>
+        <!--<a href="#courses" class="cta-button">
+            <i class="fas fa-rocket"></i>
+            Log in
+        </a>
+        <a href="#courses" class="cta-button">
+            <i class="fa-solid fa-user-plus"></i>
+            Sign Up
+        </a> -->
+        
+
+ <!-- Navigation -->
+ <nav class="nav">
+    <a href="#courses" class="cta-button" id="login-btn">
+        <i class="fas fa-rocket"></i> Log in
+    </a>
+    <a href="#courses" class="cta-button" id="signup-btn">
+        <i class="fa-solid fa-user-plus"></i> Sign Up
+    </a>
+    <a href="#dashboard" class="cta-button" id="user-icon user" style="display: none;">
+        <i class="fa-solid fa-user-tie"></i> Dashboard
+    </a>
+</nav>
+
+<!-- Login Popup -->
+<div id="login-popup" class="popup hidden">
+    <div class="popup-content">
+        <h2>Log In</h2>
+        <form id="login-form" method="post" action="login.php">
+            <input type="email" placeholder="Email" required>
+            <button type="submit" value="submit">Log in</button>
+            <button class="social-login"><i class="fab fa-google"></i> Log in with Google</button>
+            <button class="social-login"><i class="fab fa-github"></i> Log in with GitHub</button>
+        </form>
+        <button class="close-btn">&times;</button>
+    </div>
+</div>
+
+<!-- Sign Up Popup -->
+<div id="signup-popup" class="popup hidden">
+    <div class="popup-content">
+        <h2>Sign Up</h2>
+        <form id="signup-form" method="post" action="signup.php">
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Middle Name">
+            <input type="text" placeholder="Last Name" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <input type="email" placeholder="Email" required>
+            <button type="submit" value="submit">Sign Up</button>
+            <button class="social-login"><i class="fab fa-google"></i> Sign Up with Google</button>
+            <button class="social-login"><i class="fab fa-github"></i> Sign Up with GitHub</button>
+        </form>
+        <button class="close-btn">&times;</button>
+    </div>
+</div>
+
+
+<script src="log.js"></script>
+
+
+
+        <section class="quick-stats">
+            <div class="stats-container">
+              <div class="stat-item">
+                <h2>10,000+</h2>
+                <p>Students Enrolled</p>
+              </div>
+              <div class="stat-item">
+                <h2>500+</h2>
+                <p>Expert-Led Courses</p>
+              </div>
+              <div class="stat-item">
+                <h2>98%</h2>
+                <p>Satisfaction Rate</p>
+              </div>
+            </div>
+          </section>          
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <h2>Why Choose KuzaConnect?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h3>Personalized Learning Paths</h3>
+                <p>Tailor-made courses and recommendations help users achieve their goals efficiently, catering to individual learning styles and needs.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-clock"></i>
+                <h3>Flexible Learning</h3>
+                <p>Study at your own pace with 24/7 access to course materials and video lectures.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Interactive Content</h3>
+                <p>Engage with interactive assignments, quizzes, and real-world projects.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h3>Expert-Led Courses</h3>
+                <p>All courses are created and taught by certified professionals and industry experts, ensuring quality content.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-trophy"></i>
+                <h3>Gamified Learning Modules</h3>
+                <p>Learning is fun with EduConnect's badges, leaderboards, and progress tracking features that motivate you.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <i class="fa-solid fa-slash"></i>
+                <i class="fa-solid fa-laptop"></i>
+                
+                
+                <h3>Multi-Device Compatibility</h3>
+                <p>Access your courses seamlessly on desktop, tablet, or mobile devices without losing functionality.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" id="fe-courses">
+        <h2>Front-end Development Courses</h2>
+        <div class="courses-grid">
+            <div class="course-card">
+                <div class="course-image">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="course-content">
+                    <h3>HTML</h3>
+                    <p>Structure and layout web pages, creating the foundation of websites</p>
+                    <p class="price">Free</p>
+                    <button class="enroll-btn">
+                        Enroll Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <button class="download-btn">
+                        <i class="fas fa-download"></i>
+                        Download Course Materials
+                    </button>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-image">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <div class="course-content">
+                    <h3>CSS</h3>
+                    <p>Style and visually enhance web pages, controlling layout and appearance.</p>
+                    <p class="price">Free</p>
+                    <button class="enroll-btn">
+                        Enroll Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <button class="download-btn">
+                        <i class="fas fa-download"></i>
+                        Download Course Materials
+                    </button>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-image">
+                    <i class="fas fa-terminal"></i>               </div>
+                <div class="course-content">
+                    <h3>JavaScript</h3>
+                    <p>Create interactive and dynamic web elements, bringing websites to life.</p>
+                    <p class="price">Free</p>
+                    <button class="enroll-btn">
+                        Enroll Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <button class="download-btn">
+                        <i class="fas fa-download"></i>
+                        Download Course Materials
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="courses" id="be-courses">
+        <h2>Back-end Development Courses</h2>
+        <div class="courses-grid">
+            <div class="course-card">
+                <div class="course-image">
+                    <i class="fas fa-server"></i>
+                </div>
+                <div class="course-content">
+                    <h3>Server-side Development</h3>
+                    <p>Build robust and scalable web applications using Python frameworks like Django or Flask.</p>
+                    <p class="price">Free</p>
+                    <button class="enroll-btn">
+                        Enroll Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <button class="download-btn">
+                        <i class="fas fa-download"></i>
+                        Download Course Materials
+                    </button>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-image">
+                    <i class="fas fa-database"></i>                </div>
+                <div class="course-content">
+                    <h3>Database Management</h3>
+                    <p>Store and manage structured data efficiently using the MySQL database system.</p>
+                    <p class="price">Free</p>
+                    <button class="enroll-btn">
+                        Enroll Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <button class="download-btn">
+                        <i class="fas fa-download"></i>
+                        Download Course Materials
+                    </button>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-image">
+                    <i class="fas fa-project-diagram"></i>                </div>
+                <div class="course-content">
+                    <h3>Framework Utilization</h3>
+                    <p> Build complex web applications rapidly using the Python-based Django framework.</p>
+                    <p class="price">Free</p>
+                    <button class="enroll-btn">
+                        Enroll Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <button class="download-btn">
+                        <i class="fas fa-download"></i>
+                        Download Course Materials
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="courses" id="ma-courses">
+        <h2>Mobile App Development Courses</h2>
+        <div class="courses-grid">
+            <div class="course-card">
+                <div class="course-image">
+                    <i class="fab fa-apple"></i>                </div>
+                <div class="course-content">
+                    <h3>iOS App Development (Swift)</h3>
+                    <p>Build native iOS apps for iPhone and iPad using the Swift programming language.</p>
+                    <p class="price">Free</p>
+                    <button class="enroll-btn">
+                        Enroll Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <button class="download-btn">
+                        <i class="fas fa-download"></i>
+                        Download Course Materials
+                    </button>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-image">
+                    <i class="fab fa-android"></i>                </div>
+                <div class="course-content">
+                    <h3>Android App Development (Kotlin)</h3>
+                    <p>Develop native Android apps using the Kotlin programming language.</p>
+                    <p class="price">Free</p>
+                    <button class="enroll-btn">
+                        Enroll Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <button class="download-btn">
+                        <i class="fas fa-download"></i>
+                        Download Course Materials
+                    </button>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-image">
+                    <i class="fas fa-sync-alt"></i>                </div>
+                <div class="course-content">
+                    <h3>Cross-Platform App Development</h3>
+                    <p>Create apps that run on multiple platforms (iOS, Android, web) using the React Native framework.</p>
+                    <p class="price">Free</p>
+                    <button class="enroll-btn">
+                        Enroll Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <button class="download-btn">
+                        <i class="fas fa-download"></i>
+                        Download Course Materials
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="courses" id="gd-courses">
+        <h2>Graphic Design Courses</h2>
+        <div class="courses-grid">
+            <div class="course-card">
+                <div class="course-image">
+                    <i class="fas fa-paint-brush"></i>                </div>
+                <div class="course-content">
+                    <h3>UI/UX Design</h3>
+                    <p>Design user-friendly and visually appealing interfaces to optimize user experience.</p>
+                    <p class="price">Free</p>
+                    <button class="enroll-btn">
+                        Enroll Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <button class="download-btn">
+                        <i class="fas fa-download"></i>
+                        Download Course Materials
+                    </button>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-image">
+                    <i class="fas fa-image"></i>                </div>
+                <div class="course-content">
+                    <h3>Visual Communication</h3>
+                    <p>Create effective visual communication through infographics, illustrations, and branding materials.</p>
+                    <p class="price">Free</p>
+                    <button class="enroll-btn">
+                        Enroll Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <button class="download-btn">
+                        <i class="fas fa-download"></i>
+                        Download Course Materials
+                    </button>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-image">
+                    <i class="fas fa-pencil-ruler"></i>                </div>
+                <div class="course-content">
+                    <h3>Digital Illustration</h3>
+                    <p>Produce digital illustrations for various purposes, such as web graphics, game art, or print media.</p>
+                    <p class="price">Free</p>
+                    <button class="enroll-btn">
+                        Enroll Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <button class="download-btn">
+                        <i class="fas fa-download"></i>
+                        Download Course Materials
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="courses" id="dm-courses">
+        <h2>Digital Marketing Courses</h2>
+        <div class="courses-grid">
+            <div class="course-card">
+                <div class="course-image">
+                    <i class="fas fa-search"></i>                </div>
+                <div class="course-content">
+                    <h3>Search Engine Optimization (SEO)</h3>
+                    <p>Improve website visibility on search engines like Google to attract organic traffic.</p>
+                    <p class="price">Free</p>
+                    <button class="enroll-btn">
+                        Enroll Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <button class="download-btn">
+                        <i class="fas fa-download"></i>
+                        Download Course Materials
+                    </button>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-image">
+                    <i class="fas fa-mouse-pointer"></i>                </div>
+                <div class="course-content">
+                    <h3>Pay-Per-Click (PPC) Advertising</h3>
+                    <p>Create and manage paid advertising campaigns on platforms like Google Ads and social media to generate immediate results.</p>
+                    <p class="price">Free</p>
+                    <button class="enroll-btn">
+                        Enroll Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <button class="download-btn">
+                        <i class="fas fa-download"></i>
+                        Download Course Materials
+                    </button>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-image">
+                    <i class="fas fa-share-alt"></i>                </div>
+                <div class="course-content">
+                    <h3>Social Media Marketing (SMM)</h3>
+                    <p>Utilize social media platforms to engage with target audiences, build brand awareness, and drive website traffic.</p>
+                    <p class="price">Free</p>
+                    <button class="enroll-btn">
+                        Enroll Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <button class="download-btn">
+                        <i class="fas fa-download"></i>
+                        Download Course Materials
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <!-- Logo and Description -->
+            <div class="footer-logo">
+                <a href="#" class="logo">
+                    <i class="fas fa-graduation-cap"></i> KuzaConnect
+                </a>
+                <p>Empowering learners with quality education. Join us and transform your future.</p>
+
+                
+            <!-- Courses Section -->
+            <div class="footer-courses">
+                <h3>Courses to Study</h3>
+                <ul>
+                    <li><a href="#">Web Development Bootcamp</a></li>
+                    <li><a href="#">Data Science Fundamentals</a></li>
+                    <li><a href="#">Digital Marketing Essentials</a></li>
+                    <li><a href="#">Graphic Design Mastery</a></li>
+                    <li><a href="#">Python Programming Basics</a></li>
+                    <li><a href="#">Cybersecurity for Beginners</a></li>
+                    <li><a href="#">AI and Machine Learning Introduction</a></li>
+                </ul>
+            </div>
+
+            <section class="connect-with-us">
+                <h2>Connect with Us</h2>
+                <p>Follow us on social media for updates and resources:</p>
+                <div class="social-icons">
+                  <a href="https://facebook.com" target="_blank" class="social-link">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="https://twitter.com" target="_blank" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="https://instagram.com" target="_blank" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="https://linkedin.com" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a href="https://youtube.com" target="_blank" class="social-link">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </div>
+              </section>
+    
+            </div>
+            <!-- Contact Form -->
+            <div class="footer-contact" id="contact">
+                <h3>Contact Us</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name"><i class="fas fa-user"></i> Full Name</label>
+                        <input type="text" id="name" required placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-envelope"></i> Email Address</label>
+                        <input type="email" id="email" required placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject"><i class="fas fa-bookmark"></i> Subject</label>
+                        <input type="text" id="subject" required placeholder="Enter subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message"><i class="fas fa-comment"></i> Message</label>
+                        <textarea id="message" required placeholder="Type your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EduConnect. All rights reserved.</p>
+        </div>
+    </footer>
+    
+</body

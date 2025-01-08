@@ -1,0 +1,14 @@
+body {
+    min-height: 800px;
+    border: 8px solid black;
+    display: flex;
+    gap: 100[x];
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: #0071FF;
+    font-size: 40px;
+
+}

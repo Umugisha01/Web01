@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - EcoClean Africa</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.svg" alt="EcoClean Logo" class="logo-img">
+                <h1>EcoClean Africa</h1>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="services.html"><i class="fas fa-broom"></i> Services</a></li>
+                <li><a href="products.html" class="active"><i class="fas fa-shopping-basket"></i> Products</a></li>
+                <li><a href="booking.html"><i class="far fa-calendar-alt"></i> Book Now</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button id="loginBtn"><i class="fas fa-user"></i> Login</button>
+                <button id="cartBtn"><i class="fas fa-shopping-cart"></i> <span id="cartCount">0</span></button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="products-page">
+        <div class="page-header">
+            <h1>Our Products</h1>
+            <div class="filter-section">
+                <select id="categoryFilter">
+                    <option value="">All Categories</option>
+                    <option value="cleaning">Cleaning Supplies</option>
+                    <option value="eco">Eco-Friendly</option>
+                    <option value="tools">Cleaning Tools</option>
+                </select>
+                <div class="search-bar">
+                    <input type="text" id="searchProducts" placeholder="Search products...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-badge">New</div>
+                    <img src="/api/placeholder/300/300" alt="Eco-Friendly All-Purpose Cleaner">
+                    <div class="product-content">
+                        <h3>Eco-Friendly All-Purpose Cleaner</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.0)</span>
+                        </div>
+                        <p>Natural, biodegradable cleaning solution for all surfaces</p>
+                        <div class="product-price">
+                            <span class="price">RWF 2,500</span>
+                            <span class="original-price">RWF 3,000</span>
+                        </div>
+                        <div class="product-actions">
+                            <input type="number" min="1" max="99" value="1" class="quantity-input">
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- More product cards with similar structure -->
+            </div>
+        </section>
+
+        <section class="product-categories">
+            <h2>Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="/api/placeholder/200/200" alt="Cleaning Supplies">
+                    <h3>Cleaning Supplies</h3>
+                    <p>Professional grade cleaning solutions</p>
+                </div>
+                <!-- More category cards -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> info@ecoclean.africa</p>
+                <p><i class="fas fa-phone"></i> +250 123 456 789</p>
+                <p><i class="fas fa-map-marker-alt"></i> Kigali, Rwanda</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit"><i class="far fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 EcoClean Africa. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
